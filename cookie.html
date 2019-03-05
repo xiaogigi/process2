@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>Cookie</title> 
+<style type="text/css">
+ 
+#welcome h3 
+{ 
+font-weight:normal; 
+color:#800; 
+} 
+<style><style type="text/css" mce_bogus="1"> 
+#welcome h3 
+{ 
+font-weight:normal; 
+color:#800; 
+} </style> 
+<mce:script type="text/javascript" src="cookie.js" mce_src="cookie.js"></mce:script> 
+<mce:script type="text/javascript">
+    
+function useCookie() 
+{ 
+var username=getCookie("username"); 
+if(username!=null){ 
+document.getElementById('welcome').innerHTML="<h3>欢迎您,"+username+"</h3>"+"<button onclick='delusr();'>删除用户名</button>"; 
+}else{ 
+var str="<h3>欢迎您,游客!</h3>"+ 
+  "<input id='usrname' type='text' />"+ 
+  "<button id='saveusr' onclick='checksave();'>保存用户名</button>"; 
+document.getElementById('welcome').innerHTML=str; 
+} 
+} 
+
+function checksave() 
+{ 
+var el=document.getElementById('usrname'); 
+if(el.value){ 
+setCookie("username",el.value); 
+location.reload();//刷新页面 
+} 
+else 
+alert("输入框不能为空"); 
+} 
+
+function delusr() 
+{ 
+delCookie("username"); 
+location.reload(); 
+} 
+</mce:script> 
+</head> 
+<body onload="useCookie();"> 
+<div id="welcome"> 
+</div> 
+</body> 
+</html> 

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+
+        <style>
+            body {
+                margin: 0;
+                background: #caf8f1;
+            }
+            #your_option{
+                position: absolute;
+                top: 8%;
+                left: 2%;
+            }
+            #option_box{
+                width: 200px;
+                height: auto;
+                position: absolute;
+                top: 8.5%;
+                left: 9%;
+            }
+
+            #massive_migration{
+                background: #F5E0B7;
+                color: black;
+                width: 190px;
+                height: 40px;
+                /*position: absolute;
+                top: 8.5%;
+                left: 9%;*/
+                text-align: center;
+                padding-top: 15px; 
+                border-radius: 15px;
+                display: none;
+            }
+
+            #massive_diseasse_outbreaks{
+                background: #F5E0B7;
+                color: black;
+                width: 190px;
+                height: 40px;
+                text-align: center;
+                padding-top: 15px; 
+                border-radius: 15px;
+                display: none;
+            }
+            #environmental_campaign{
+                background: #F5E0B7;
+                color: black;
+                width: 190px;
+                height: 40px;
+                /*position: absolute;
+                top: 2.5%;
+                left: 9%;*/
+                padding-left: 20px;
+                padding-top: 15px; 
+                border-radius: 15px;
+                display: none;
+            }
+            
+             #new_energy{
+                background: #F5E0B7;
+                color: black;
+                width: 190px;
+                 height: 40px;
+                padding-left: 20px;
+                padding-top: 15px; 
+                border-radius: 15px;
+                display: none;
+            }
+            
+            #zero_emission{
+                background: #F5E0B7;
+                color: black;
+                width: 190px;
+                 height: 40px;
+                padding-left: 20px;
+                padding-top: 15px; 
+                border-radius: 15px;
+                display: none;
+            }
+            
+            #transport{
+                background: #F5E0B7;
+                color: black;
+                width: 190px;
+                 height: 40px;
+                padding-left: 20px;
+                padding-top: 15px; 
+                border-radius: 15px;
+                display: none;
+            }
+
+            #start{
+                background: #FEEA7C;
+                color: black;
+                position: absolute;
+                left: 50%;
+                top: 5%;
+                border-radius: 15px;
+                width: 50px;
+                text-align: center;
+            }
+
+            #commitment{
+                background: #fff;
+                color: black;
+                font-size: 20px;
+                position: absolute;
+                top: 40%;
+                left: 5%;
+                width: 300px;
+                padding-left: 8px;
+                padding-top: 30px;
+                height: 90px;
+                word-break: normal;
+                text-align: center;
+                border-radius: 15px;
+            }
+
+            #commitment2{
+                background: #fff;
+                color: black;
+                font-size: 20px;
+                position: absolute;
+                top: 40%;
+                left: 40%;
+                width: 300px;
+                padding-left: 8px;
+                padding-top: 40px;
+                height: 90px;
+                word-break: normal;
+                text-align: center;
+                border-radius: 15px;
+            }
+
+            #commitment3{
+                background: #fff;
+                color: black;
+                font-size: 20px;
+                position: absolute;
+                top: 40%;
+                left: 75%;
+                width: 300px;
+                padding-left: 8px;
+                padding-top: 40px;
+                height: 90px;
+                word-break: normal;
+                text-align: center;
+                border-radius: 15px;
+            }
+
+            #year_box{
+                width: 150px;
+                height: 30px;
+                background-color: #ddd;
+                margin-top: 50px;
+                position: absolute;
+                left: 83%;
+            }
+            #year_bar{
+                height: 30px;
+                background-color: #4CAF50;
+                width: 0;
+            }
+            #year_text{
+                position: absolute;
+                left: 80%;
+                top: 5.5%;
+            }
+            #budget_amount {
+                position: absolute;
+                width: 30px;
+                left: 95%;
+                top: 22.5%;
+            }
+
+            #budget2 {
+                position: absolute;
+                width: 30px;
+                left: 95%;
+                top: 22.5%;
+            }
+
+            #budget_box{
+                width: 150px;
+                height: 30px;
+                background-color: #ddd;
+                margin-top: 50px;
+                position: absolute;
+                left: 83%;
+                top: 15%;
+            }
+            #budget_bar{
+                width: 150px;
+                height: 30px;
+                background-color: #4CAF50;
+            }
+            #budget_text{
+                position: absolute;
+                left: 79%;
+                top: 20.5%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="scenario.html">
+        <div id="scenario">
+        Scenario
+        </div>
+            </a>
+        
+        <div id="start" onclick="move()">
+            <p>Start</p>
+        </div>
+        <div id="your_option">
+            Your Option:
+        </div>
+        <div id="option_box">
+            <div id="massive_migration">Massive Migration</div>
+            <div id="massive_diseasse_outbreaks">
+                Massive Disease Outbreaks
+            </div>
+            <div id="environmental_campaign">
+                Eco-Awarness Campaign</div>
+            
+            <div id="new_energy">New Energy Technology</div>
+            
+            <div id="zero_emission">Net Zero Emission Programme</div>
+            
+            <div id="transport">
+            Switch Transport to Electricity
+            </div>
+        </div>
+        <div id="year_text">
+            <p>Year</p>
+        </div>
+        <div id="year_box">
+            <div id="year_bar"></div>
+        </div>
+
+        <div id="budget_amount"></div>
+        <div id="budget2">1000</div>
+
+
+        <div id="budget_text">
+            <p>Budget</p>
+        </div>
+        <div id="budget_box">
+            <div id="budget_bar"></div>
+        </div>
+
+        <a href="adaptation.html">
+            <div id="commitment">
+                I wanna rehearse adaptive responses
+            </div>
+        </a>
+        <div id="commitment2">
+            I think global warming is an unproven theory and overstated threat
+        </div>
+        <a href="mitigation.html">
+            <div id="commitment3">
+                I wanna commit to mitigating Climate Change
+            </div>
+        </a>
+
+        <script src="js/prompt.js"></script>
+        <script src="js/function.js"></script>
+        
+         <script>
+            document.addEventListener("onload", move_judgement2());
+        </script>
+
+    </body>
+</html>

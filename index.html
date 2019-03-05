@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fate of Climate Change</title>
+        <style>
+            body {margin: 0; background:#caf8f1; }
+            canvas {width: 100%;}
+
+            #prompt1{
+                background: #fff;
+                color: black;
+                font-size: 15px;
+                height: 50px;
+                width: 400px;
+                border-radius: 15px;
+                position:absolute;
+                top: 50%;
+                left: 2%;
+                padding-top: 18px;
+                padding-left: 30px;
+
+            }
+
+            #button_box{
+                position: absolute;
+                top: 0;
+                z-index: 50;
+                padding: 50px 50px 0 50px;
+            }
+
+            #commitment{
+                background: #fff;
+                color: black;
+                font-size: 20px;
+                position: absolute;
+                top: 40%;
+                left: 5%;
+                width: 300px;
+                padding-left: 8px;
+                padding-top: 30px;
+                height: 90px;
+                word-break: normal;
+                text-align: center;
+                border-radius: 15px;
+                display: none;
+            }
+
+            #commitment2{
+                background: #fff;
+                color: black;
+                font-size: 20px;
+                position: absolute;
+                top: 40%;
+                left: 40%;
+                width: 300px;
+                padding-left: 8px;
+                padding-top: 40px;
+                height: 90px;
+                word-break: normal;
+                text-align: center;
+                border-radius: 15px;
+                display: none;
+            }
+
+            #commitment3{
+                background: #fff;
+                color: black;
+                font-size: 20px;
+                position: absolute;
+                top: 40%;
+                left: 75%;
+                width: 300px;
+                padding-left: 8px;
+                padding-top: 40px;
+                height: 90px;
+                word-break: normal;
+                text-align: center;
+                border-radius: 15px;
+                display: none;
+            }
+
+            #year_box{
+                width: 150px;
+                height: 30px;
+                background-color: #ddd;
+                margin-top: 50px;
+                position: absolute;
+                left: 83%;
+            }
+            #year_bar{
+                width: 10px;
+                height: 30px;
+                background-color: #4CAF50;
+            }
+            #year_text{
+                position: absolute;
+                left: 80%;
+                top: 5.5%;
+            }
+
+            #budget_box{
+                width: 150px;
+                height: 30px;
+                background-color: #ddd;
+                margin-top: 50px;
+                position: absolute;
+                left: 83%;
+                top: 15%;
+            }
+            #budget_bar{
+                width: 150px;
+                height: 30px;
+                background-color: #4CAF50;
+            }
+            #budget_text{
+                position: absolute;
+                left: 79%;
+                top: 20.5%;
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="button_box">
+            <a href="prompt.html" id="button" onclick="move()">
+                Next
+            </a>
+        </div>
+
+        <div id = "prompt1">
+            As a policymaker how do you wanna respond to climate change?
+        </div>
+
+        <script src="js/three.js"></script>
+        <script src="js/ColladaLoader.js"></script>
+        <script src="js/Detector.js"></script>
+        <script src="js/three.min.js"></script>
+        <script src="js/tween.min.js"></script>
+        <script src="js/index.js"></script>
+       
+
+    </body>
+</html>
